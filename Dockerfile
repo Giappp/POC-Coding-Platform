@@ -1,0 +1,11 @@
+FROM python:3.12-alpine
+
+RUN addgroup -S sandbox_group && adduser -S sandbox_user -G sandbox_group
+
+WORKDIR /workspace
+
+RUN chown -R sandbox_user:sandbox_group /workspace
+
+USER sandbox_user
+
+CMD ["sh"]

@@ -1,0 +1,30 @@
+{
+  "defaultAction": "SCMP_ACT_ERRNO",
+  "archMap": [
+    {
+      "architecture": "SCMP_ARCH_X86_64",
+      "subArchitectures": ["SCMP_ARCH_X86", "SCMP_ARCH_X32"]
+    }
+  ],
+  "syscalls": [
+    {
+      "names": [
+        "read","write","open","close","stat","fstat","lstat",
+        "poll","lseek","mmap","mprotect","munmap","brk",
+        "rt_sigaction","rt_sigprocmask","rt_sigreturn",
+        "ioctl","pread64","pwrite64","readv","writev",
+        "access","pipe","select","sched_yield",
+        "mremap","msync","mincore","madvise",
+        "shmget","shmat","shmctl",
+        "dup","dup2","clone","fork","vfork","execve","exit","wait4",
+        "kill","uname","fcntl","getcwd","chdir",
+        "getpid","getppid","getuid","getgid",
+        "gettimeofday","nanosleep",
+        "socket","connect","accept","sendto","recvfrom","shutdown",
+        "bind","listen","getsockname","getpeername",
+        "setsockopt","getsockopt"
+      ],
+      "action": "SCMP_ACT_ALLOW"
+    }
+  ]
+}
