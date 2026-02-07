@@ -1,6 +1,6 @@
 # POC Coding Platform
 
-Bản ackend demo cho phép biên dịch và chạy mã nguồn sử dụng Docker làm môi trng sandbox để thực thi code
+Bản Backend demo cho phép biên dịch và chạy mã nguồn sử dụng Docker làm sandbox để thực thi code
 
 Mục đích:
 - Cung cấp môi trường cô lập để thực thi mã không tin cậy (ví dụ: bài tập lập trình, bài kiểm tra tự động) bằng Docker.
